@@ -1,0 +1,13 @@
+{
+  "title": "Portfolio Website",
+  "img_path": "https://raw.githubusercontent.com/khalilacheche/PortfolioWebsite/project-metadata/portfolio.png",
+  "description": "This website",
+  "tags": [
+    "Web Development"
+  ],
+  "langs": [
+    "Javascript","HTML","CSS"
+  ],
+  "link": "https://tweet-sa.streamlit.app/",
+  "frameworks":["React"]
+}
