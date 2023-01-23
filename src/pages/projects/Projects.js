@@ -59,6 +59,8 @@ function selectStyles(mainColor) {
     }),
     clearIndicator: (base, state) => ({
       ...base,
+      background: mainColor,
+      color: "rgb(0, 0, 0)"
     }),
     multiValue: (base, state) => ({
       ...base,
@@ -80,6 +82,11 @@ function selectStyles(mainColor) {
         background: "rgb(0,0,0,0)",
         color: "rgb(0, 0, 0)"
       }
+    }),
+    indicatorsContainer: (base, state) => ({
+      ...base,
+      background: mainColor,
+
     }),
     menu: (base, state) => ({
       ...base,
@@ -193,8 +200,8 @@ class Projects extends Component {
         </div>
         <div className="repo-selector-div-main">
           <Grid container spacing={1}>
-            <Grid item xs={6}>
-              {"show projects in either domains of"}
+            <Grid item xs={6} style={{ textAlign: "right", marginTop: "0.3em" }}>
+              Show the projects in either <div style={{ display: "inline", borderColor: "rgb(17, 121, 247)", borderStyle: "solid", borderRadius: "5px", padding: "2.5px" }}> domains</div> of:
             </Grid>
             <Grid item xs={3}>
               <Select
@@ -209,8 +216,8 @@ class Projects extends Component {
                 styles={selectStyles("rgb(17, 121, 247)")}
               />
             </Grid>
-            <Grid item xs={6}>
-              {"using either of the following frameworks"}
+            <Grid item xs={6} style={{ textAlign: "right", marginTop: "0.3em" }}>
+              using either of the following <div style={{ display: "inline", borderColor: "#FF0000", borderStyle: "solid", borderRadius: "5px", padding: "2.5px" }}> frameworks</div>:
             </Grid>
             <Grid item xs={3}>
               <Select
@@ -225,7 +232,8 @@ class Projects extends Component {
                 styles={selectStyles("#FF0000")}
               />
             </Grid>
-            <Grid item xs={6} justify="flex-end">{"and written in either of the following languages"}
+            <Grid item xs={6} style={{ textAlign: "right", marginTop: "0.3em" }}>
+              and written in either of the following <div style={{ display: "inline", borderColor: "rgb(255, 165, 0)", borderStyle: "solid", borderRadius: "5px", padding: "2.5px" }}> languages</div>:
             </Grid>
             <Grid item xs={3}>
               <Select

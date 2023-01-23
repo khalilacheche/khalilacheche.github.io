@@ -1,7 +1,7 @@
 import React from "react";
 import "./SoftwareSkill.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
-
+import { Tooltip } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 class SoftwareSkill extends React.Component {
   render() {
     return (
@@ -17,24 +17,18 @@ class SoftwareSkill extends React.Component {
           })} */}
             {this.props.logos.map((logo) => {
               return (
-                <OverlayTrigger
-                  key={logo.skillName}
-                  placement={"top"}
-                  overlay={
-                    <Tooltip id={`tooltip-top`}>
-                      <strong>{logo.skillName}</strong>
-                    </Tooltip>
-                  }
-                >
-                  <li className="software-skill-inline" name={logo.skillName}>
-                    <span
-                      className="iconify"
-                      data-icon={logo.fontAwesomeClassname}
-                      style={logo.style}
-                      data-inline="false"
-                    ></span>
-                  </li>
-                </OverlayTrigger>
+                <li className="software-skill-inline" key={logo.skillName} >
+                  <Tooltip title={logo.skillName}>
+                    <IconButton>
+                      <span
+                        className="iconify"
+                        data-icon={logo.fontAwesomeClassname}
+                        style={logo.style}
+                        data-inline="false"
+                      ></span>
+                    </IconButton>
+                  </Tooltip>
+                </li>
               );
             })}
           </ul>

@@ -22,68 +22,74 @@ class SkillSection extends Component {
       <div>
         {skills.data.map((skill) => {
           return (
-            skill.idx % 2 === 0 ? (<div className="skills-main-div">
-              <div className="skills-text-div">
-                <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.blue,fontWeight:"bold" }}>
-                    {skill.title}
-                  </h1>
-                </Fade>
-                <Fade right duration={1000}>
-                  <SoftwareSkill logos={skill.softwareSkills} />
-                </Fade>
-                <Fade right duration={1000}>
-                  <div>
-                    {skill.skills.map((skillSentence) => {
-                      return (
-                        <p
-                          className="subTitle skills-text"
-                          style={{ color: theme.text }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
+            skill.idx % 2 === 0 ? (
+              <div className="skills-main-div" key={skill.idx}>
+                <div className="skills-text-div">
+                  <Fade right duration={1000}>
+                    <h1 className="skills-heading" style={{ color: theme.blue, fontWeight: "bold" }}>
+                      {skill.title}
+                    </h1>
+                  </Fade>
+                  <Fade right duration={1000}>
+                    <SoftwareSkill logos={skill.softwareSkills} />
+                  </Fade>
+                  <Fade right duration={1000}>
+                    <div>
+                      {skill.skills.map((skillSentence) => {
+                        return (
+                          <p
+                            className="subTitle skills-text"
+                            style={{ color: theme.text }}
+                            key={skillSentence}
+                          >
+                            {skillSentence}
+                          </p>
+                        );
+                      })}
+                    </div>
+                  </Fade>
+                </div>
+                <Fade left duration={1000}>
+                  <div className="skills-image-div">
+                    <GetSkillSvg fileName={skill.fileName} theme={theme} />
                   </div>
                 </Fade>
               </div>
-                            <Fade left duration={1000}>
-                <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                </div>
-              </Fade>
-            </div>):(<div className="skills-main-div">
-              <Fade left duration={1000}>
-                <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                </div>
-              </Fade>
-              <div className="skills-text-div">
-                <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.blue }}>
-                    {skill.title}
-                  </h1>
-                </Fade>
-                <Fade right duration={1000}>
-                  <SoftwareSkill logos={skill.softwareSkills} />
-                </Fade>
-                <Fade right duration={1000}>
-                  <div>
-                    {skill.skills.map((skillSentence) => {
-                      return (
-                        <p
-                          className="subTitle skills-text"
-                          style={{ color: theme.text }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
+            ) : (
+              <div className="skills-main-div" key={skill.idx} >
+                <Fade left duration={1000}>
+                  <div className="skills-image-div">
+                    <GetSkillSvg fileName={skill.fileName} theme={theme} />
                   </div>
                 </Fade>
+                <div className="skills-text-div">
+                  <Fade right duration={1000}>
+                    <h1 className="skills-heading" style={{ color: theme.blue }}>
+                      {skill.title}
+                    </h1>
+                  </Fade>
+                  <Fade right duration={1000}>
+                    <SoftwareSkill logos={skill.softwareSkills} />
+                  </Fade>
+                  <Fade right duration={1000}>
+                    <div>
+                      {skill.skills.map((skillSentence) => {
+                        return (
+                          <p
+                            className="subTitle skills-text"
+                            style={{ color: theme.text }}
+                            key={skillSentence}
+                          >
+                            {skillSentence}
+                          </p>
+                        );
+                      })}
+                    </div>
+                  </Fade>
+                </div>
               </div>
-            </div>));
-            
+            ));
+
         })}
       </div>
     );

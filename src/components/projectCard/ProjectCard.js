@@ -12,7 +12,7 @@ class ProjectCard extends Component {
           <Card.Img
             variant="top"
             src={proj.img_path}
-            style={{ maxHeight: "200px", objectFit: "cover", borderRadius: "20px" }}
+            style={{ maxHeight: "200px", objectFit: "cover", borderTopRightRadius: "20px", borderTopLeftRadius: "20px" }}
 
           />
           <Card.Body>
@@ -28,6 +28,7 @@ class ProjectCard extends Component {
                     style={{
                       margin: "5px",
                       backgroundColor: "rgb(17, 121, 247)",
+                      color: "black",
                     }}
                   >
                     {" "}
@@ -43,6 +44,7 @@ class ProjectCard extends Component {
                     style={{
                       margin: "5px",
                       backgroundColor: "#FF0000",
+                      color: "black",
                     }}
                   >
                     {" "}
@@ -58,6 +60,7 @@ class ProjectCard extends Component {
                     style={{
                       margin: "5px",
                       backgroundColor: "rgb(255, 165, 0)",
+                      color: "black",
                     }}
                   >
                     {" "}
@@ -134,7 +137,7 @@ function parseRepoElements(elem) {
   res.title = elem.metadata.title;
   var content = elem.metadata.description;
   res.link = elem.metadata.link;
-  res.description = content.slice(0, 100) + '...';
+  res.description = content;//.slice(0, 100) + '...';
   res.tags = elem.metadata.tags;
   res.langs = elem.metadata.langs;
   res.frameworks = elem.metadata.frameworks;

@@ -67,7 +67,7 @@ const skills = {
         },
         {
           skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
+          fontAwesomeClassname: "logos-pytorch-icon",
           style: {
             backgroundColor: "transparent",
           },
@@ -108,31 +108,17 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          skillName: "Unity",
+          fontAwesomeClassname: "fa6-brands:unity",
           style: {
-            color: "#E34F26",
+            color: "#FFFFFF",
           },
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          skillName: "Android Studio",
+          fontAwesomeClassname: "material-symbols:android",
           style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "BootStrap",
-          fontAwesomeClassname: "logos-bootstrap",
-          style: {
-            color: "#CC6699",
+            color: "#78C257",
           },
         },
         {
@@ -144,8 +130,8 @@ const skills = {
           },
         },
         {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
+          skillName: "Java",
+          fontAwesomeClassname: "logos:java",
           style: {
             color: "#61DAFB",
           },
@@ -155,13 +141,6 @@ const skills = {
           fontAwesomeClassname: "simple-icons:node-dot-js",
           style: {
             color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
           },
         },
       ],
@@ -178,31 +157,24 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
+          skillName: "Arduino",
+          fontAwesomeClassname: "simple-icons:arduino",
           style: {
-            color: "#FF2BC2",
+            color: "#00979C",
           },
         },
         {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
+          skillName: "Raspberry Pi",
+          fontAwesomeClassname: "logos:raspberry-pi",
           style: {
             color: "#FF7C00",
           },
         },
         {
-          skillName: "Adobe Photoshop",
-          fontAwesomeClassname: "simple-icons:adobephotoshop",
+          skillName: "AutoDesk Fusion 360",
+          fontAwesomeClassname: "simple-icons:autodesk",
           style: {
-            color: "#2fa3f7",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
+            color: "#db7c23",
           },
         },
       ],
@@ -214,7 +186,7 @@ const skills = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "Here are some of my own projects/projects I contributed to in a group collaboration. These projects were either done as a part of my college curriculum or as personal projects. They are all self-guided (i.e. without any specific instructions on the implementation).",
+    "Here are some of my own projects/projects I contributed to in a group collaboration. These projects were either done as a part of my college curriculum or as personal projects.",
 };
 
 //project cards
@@ -225,7 +197,7 @@ const resumeleft = {
     title: ["Work Experience"],
     data: [
       {
-        title: "VR research Intern",
+        title: "VR Research Intern",
         subtitle: "Immersive Interactive Group, EPFL, Switzerland",
         date: "July 2022 - September 2022",
         content: [
@@ -235,7 +207,7 @@ const resumeleft = {
         ],
       },
       {
-        title: "Data Science Intern",
+        title: "Embedded Systems Developer",
         subtitle: "MakerLab, Sousse, Tunisia",
         date: "July 2019 - September 2019",
         content: [

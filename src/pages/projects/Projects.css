@@ -42,8 +42,13 @@
   min-width: 0;
   color: rgb(255, 255, 255);
   word-wrap: break-word;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(20, 20, 20);
   background-clip: border-box;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.card:hover{
+  scale: 1.1;
 }
 
 .card > hr {
