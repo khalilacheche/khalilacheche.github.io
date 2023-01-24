@@ -7,7 +7,7 @@ class ProjectCard extends Component {
     const proj = parseRepoElements(this.props.project);
     const theme = this.props.theme;
     return (
-      <Grid item xs={2} sm={4} md={4} key={this.props.index}>
+      <Grid item xs={2} sm={4} md={4} >
         <Card className="h-100" style={{ borderColor: "rgb(0, 0, 0)" }} bg={"dark"}>
           <Card.Img
             variant="top"
@@ -25,6 +25,7 @@ class ProjectCard extends Component {
               {proj.tags.map((tag) => {
                 return (
                   <Badge
+                    key={proj.title + tag}
                     style={{
                       margin: "5px",
                       backgroundColor: "rgb(17, 121, 247)",
@@ -41,6 +42,7 @@ class ProjectCard extends Component {
               {proj.frameworks.map((framework) => {
                 return (
                   <Badge
+                    key={proj.title + framework}
                     style={{
                       margin: "5px",
                       backgroundColor: "#FF0000",
@@ -57,6 +59,7 @@ class ProjectCard extends Component {
               {proj.langs.map((lang) => {
                 return (
                   <Badge
+                    key={proj.title + lang}
                     style={{
                       margin: "5px",
                       backgroundColor: "rgb(255, 165, 0)",
@@ -75,42 +78,31 @@ class ProjectCard extends Component {
             ></div>
             <Card.Text>{proj.description}</Card.Text>
             {proj.link === undefined ? null : (
-              <Card.Link>
-                <a
-                  style={{ color: theme.text }}
-                  href={proj.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Demo
-                  <i
-                    className={`fas fa-external-link-alt`}
-                    style={{
-                      color: proj.linkcolor,
-                      marginLeft: "5px",
-                    }}
-                  ></i>
-                </a>
-              </Card.Link>
-            )
-
-            }
-            <Card.Link>
-              <a
-                style={{ color: theme.text }}
-                href={proj.code}
+              <Card.Link style={{ color: theme.text }}
+                href={proj.link}
                 target="_blank"
-                rel="noopener noreferrer"
-              >
-                Repo
+                rel="noopener noreferrer">
+                Live Demo
                 <i
-                  className={`fab fa-github`}
+                  className={`fas fa-external-link-alt`}
                   style={{
                     color: proj.linkcolor,
                     marginLeft: "5px",
                   }}
                 ></i>
-              </a>
+              </Card.Link>
+            )
+
+            }
+            <Card.Link href={proj.code} style={{ color: theme.text }} target="_blank" rel="noopener noreferrer">
+              Repo
+              <i
+                className={`fab fa-github`}
+                style={{
+                  color: proj.linkcolor,
+                  marginLeft: "5px",
+                }}
+              ></i>
             </Card.Link>
           </Card.Body>
         </Card>

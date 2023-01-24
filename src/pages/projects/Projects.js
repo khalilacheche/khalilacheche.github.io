@@ -121,7 +121,6 @@ class Projects extends Component {
       var frameworks = repo.metadata.frameworks;
       var langs = repo.metadata.langs;
       var res = selectedTags.length === 0 || selectedTags.some((tag) => tags.includes(tag.value));
-      console.log(repo);
       res = res && (selectedFrameworks.length === 0 || selectedFrameworks.some((framework) => frameworks.includes(framework.value)));
       res = res && (selectedLangs.length === 0 || selectedLangs.some((lang) => langs.includes(lang.value)));
       return res;
@@ -131,7 +130,6 @@ class Projects extends Component {
   }
   filterSelectionOptions(filteredProjects, variable) {
     var options = this.state[variable];
-    console.log(this.state.lastSelected !== undefined && this.state.lastSelected.includes(variable));
     if (this.state.lastSelected !== undefined && this.state.lastSelected.toLowerCase().includes(variable)) {
       return options;
     }
@@ -261,7 +259,7 @@ class Projects extends Component {
         <div className="repo-cards-div-main">
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {filteredProjects.map((proj, index) => {
-              return <ProjectCard project={proj} index={index} theme={theme} />;
+              return <ProjectCard project={proj} key={index} theme={theme} />;
             })}
 
           </Grid>

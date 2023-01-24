@@ -13,11 +13,12 @@ export default function Resume() {
               <Col md={6} className="resume-left">
                 {resumeleft.left.map((head) => {
                   return (
-                    <>
+                    <div key={head.title}>
                       <h3 className="resume-title">{head.title}</h3>
                       {head.data.map((res) => {
                         return (
                           <Resumecontent
+                            key={res.title}
                             title={res.title}
                             subtitle={res.subtitle}
                             date={res.date}
@@ -25,7 +26,7 @@ export default function Resume() {
                           ></Resumecontent>
                         );
                       })}
-                    </>
+                    </div>
                   );
                 })}
               </Col>
@@ -34,11 +35,12 @@ export default function Resume() {
               <Col md={6} className="resume-right">
                 {resumeright.right.map((head) => {
                   return (
-                    <>
+                    <div key={head.title}>
                       <h3 className="resume-title">{head.title}</h3>
                       {head.data.map((info) => {
                         return (
                           <Resumecontent
+                            key={info.title}
                             title={info.title}
                             subtitle={info.subtitle}
                             date={info.date}
@@ -46,7 +48,7 @@ export default function Resume() {
                           ></Resumecontent>
                         );
                       })}
-                    </>
+                    </div>
                   );
                 })}
               </Col>

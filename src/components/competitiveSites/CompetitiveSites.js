@@ -10,7 +10,7 @@ class CompetitiveSites extends React.Component {
         <ul className="dev-icons">
           {this.props.logos.map((logo) => {
             return (
-              <li className="competitive-sites-inline" name={logo.siteName}>
+              <li className="competitive-sites-inline" name={logo.siteName} key={logo.siteName}>
                 <Tooltip title={logo.siteName} arrow>
                   <a
                     href={logo.profileLink}
