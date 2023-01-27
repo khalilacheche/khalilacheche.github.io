@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://khalilacheche.github.io/PortfolioWebsite",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@emotion/react": "^11.10.5",
@@ -11,6 +12,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
+    "@uiw/react-markdown-preview": "^4.1.7",
     "@weknow/react-bubble-chart-d3": "^1.0.12",
     "apollo-boost": "^0.4.9",
     "baseui": "^12.2.0",
@@ -44,6 +46,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

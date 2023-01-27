@@ -10,6 +10,7 @@ import { Fade } from "react-awesome-reveal";
 import { projectsHeader } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
+import ProjectOverlay from "./ProjectOverlay";
 import makeAnimated from 'react-select/animated';
 import Grid from '@mui/material/Grid';
 export const octokit = new Octokit({
@@ -108,7 +109,6 @@ class Projects extends Component {
   updateSelectedVariable(variable) {
     return ((selectedOption) => {
       this.setState({ [variable]: selectedOption, lastSelected: variable });
-
     });
   }
   filterProjects() {
@@ -128,6 +128,16 @@ class Projects extends Component {
 
     return repos;
   }
+  onOverlayClose = () => {
+    this.setState({ overlayOpen: false });
+  };
+  onOverlayOpen = function (repo) {
+    return (() => {
+      this.setState({ overlayOpen: true, overlayRepo: repo });
+    });
+  };
+
+
   filterSelectionOptions(filteredProjects, variable) {
     var options = this.state[variable];
     if (this.state.lastSelected !== undefined && this.state.lastSelected.toLowerCase().includes(variable)) {
@@ -172,6 +182,9 @@ class Projects extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
+        <div className="repo-overlay-div-main">
+          <ProjectOverlay onClose={this.onOverlayClose} open={this.state.overlayOpen} project={this.state.overlayRepo} />
+        </div>
         <Header theme={theme} />
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
@@ -247,19 +260,12 @@ class Projects extends Component {
               />
             </Grid>
           </Grid>
-
-
-
-
-
         </div>
-        <div className="repo-chart-div-main">
 
-        </div>
         <div className="repo-cards-div-main">
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {filteredProjects.map((proj, index) => {
-              return <ProjectCard project={proj} key={index} theme={theme} />;
+              return <ProjectCard project={proj} key={index} theme={theme} onClick={this.onOverlayOpen(proj)} />;
             })}
 
           </Grid>

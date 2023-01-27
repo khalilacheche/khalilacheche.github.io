@@ -7,7 +7,7 @@ class ProjectCard extends Component {
     const proj = parseRepoElements(this.props.project);
     const theme = this.props.theme;
     return (
-      <Grid item xs={2} sm={4} md={4} >
+      <Grid item xs={2} sm={4} md={4} onClick={this.props.onClick}>
         <Card className="h-100" style={{ borderColor: "rgb(0, 0, 0)" }} bg={"dark"}>
           <Card.Img
             variant="top"
