@@ -52,10 +52,8 @@ const skills = {
       fileName: "DataScienceImg",
       "idx": 0,
       skills: [
-        "⚡ Developing highly scalable production-ready models for various deep learning and statistical use cases",
-        "⚡ Experience in working with Computer Vision using OpenCV and vision transformers",
-        "⚡ Having good hands-on with Data Cleaning, processing & Analysing using Pandas, Tableau & PowerBI",
-        "⚡ Experience with Text-to-speech encoders/decoders (speech synthesis) & Voice Cloning",
+        "⚡ Having good hands-on with Data Cleaning, processing & Analysing using Pandas, Numpy, Matplotlib, Seaborn, Plotly & Scikit-learn",
+        "⚡ Experience with various Machine Learning algorithms such as Logistic Regression, K-Nearest Neighbors, K-Means Clustering, Support Vector Machines, LSTMs, Transformers etc.",
       ],
       softwareSkills: [
         {
@@ -102,9 +100,11 @@ const skills = {
       fileName: "FullStackImg",
       "idx": 1,
       skills: [
-        "⚡ Building responsive websites using HTML5, CSS3, BootStrap5, ReactJS & NodeJS",
-        "⚡ Creating application backend in Node, Flask & Streamlit",
-        "⚡ Having experience in Domain & Hosting using Netlify, Vercel, Heroku & Hostinger",
+        "⚡ Experience in responsive websites using HTML5, CSS3, ReactJS & NodeJS",
+        "⚡ Experience in developing Android applications using Java & Android Studio",
+        "⚡ Experience in developing cross-platform applications using Java & JavaFX",
+        "⚡ Experience in developing 2D & 3D games using Unity",
+        "⚡ Experience in backend development using NodeJS & Express"
       ],
       softwareSkills: [
         {
@@ -150,10 +150,9 @@ const skills = {
       fileName: "DesignImg",
       "idx": 2,
       skills: [
-        "⚡ Designing highly attractive user interfaces for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-        "⚡ Applying latest Design principles and experienced in product wireframing",
+        "⚡ Designing and developing autonomous robots using Arduino & Raspberry Pi",
+        "⚡ Experience in designing and developing 3D models using AutoDesk Fusion 360",
+        "⚡ Experience in designing electronic circuits using Fritzing",
       ],
       softwareSkills: [
         {
@@ -197,13 +196,22 @@ const resumeleft = {
     title: ["Work Experience"],
     data: [
       {
+        title: "Freelance Developer",
+        subtitle: "Poseidon, EPFL, Switzerland",
+        date: "April 2022 - Now",
+        content: [
+          "Develop features and maintain Poseidon's proprietary software for scheduling employee's time tables",
+          "Work on miscelaneous tasks such as improving the UI/UX of the software, improving the performance of the software, etc.",
+          "Work on various projects within the company such as developing an IoT device to communicate with the employees"
+        ],
+      },
+      {
         title: "VR Research Intern",
         subtitle: "Immersive Interactive Group, EPFL, Switzerland",
         date: "July 2022 - September 2022",
         content: [
-          "My role at Listnr included a lot of research work about Audio Encoders and Vocoders and Speech Synthesis in general.",
-          "Worked on some SOTA Inference TTS Models such as TacoTron2, FastSpeech2, and Wavenet.",
-          "Also had hands-on with real-time voice cloning algorithm.",
+          "Worked on a project to develop a VR based experiment to study the effect of VR on embodiment",
+          "Improved in-game pose estimation of the avatar based on the user's body movements",
         ],
       },
       {
@@ -211,8 +219,9 @@ const resumeleft = {
         subtitle: "MakerLab, Sousse, Tunisia",
         date: "July 2019 - September 2019",
         content: [
-          "Phase 1 included Data Cleaning & Data Annotation for object detection task",
-          "Used YOLO v5 for Fire Detection Project",
+          "Collaborated with a four-person team to develop and test different embedded systems based solutions for private clients.",
+          "Handled the testing and debugging of the developed systems.",
+          "Wrote the main code for the developed systems using C++ and Arduino.",
         ],
       },
       {
@@ -220,10 +229,9 @@ const resumeleft = {
         subtitle: "GoMyCode, Tunis, Tunisia",
         date: "July 2017 - August 2017",
         content: [
-          "Learnt & applied various Machine Learning libraries",
-          "Had hands-on with Data Visualization techniques using matplotlib, plotly, streamlit",
-          "Understood and applied Neural networks using Tensorflow and finally competed in Kaggle Hackathon ranking 135 (top 16 percentile) among 854 Kaggle participants",
-          "Ranked 85 out of 1500+ students for overall performance.",
+          "Collaborated with a team of 10 instructors to teach a group of 70 students the basics of programming and game development with Unity.",
+          "Taught the students how to use Unity to develop 2D and 3D games.",
+          "Helped the students to develop their own games.",
         ],
       },
     ],
@@ -234,8 +242,9 @@ const resumeleft = {
       {
         title: "Level 1 Technical Support",
         subtitle: "Poseidon, Lausanne, Switzerland",
+        date: "September 2021 - Now",
         content: [
-          "Provided technical support to customers via phone, email, and chat",
+          "Provided IT support to EPFL students via phone, email, and chat",
         ],
       },
     ],

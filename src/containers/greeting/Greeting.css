@@ -177,12 +177,12 @@
   margin: 0px 0px 0.1rem 0.5rem;
 }
 
-[data-entity][data-entity="noun"] {
+[data-entity][data-entity="passion"] {
   background: rgba(166, 226, 45, 0.2);
   border-color: rgb(166, 226, 45);
   color: rgb(255, 255, 255);
 }
-[data-entity][data-entity="noun"]::after {
+[data-entity][data-entity="passion"]::after {
   background: rgb(166, 226, 45);
   color: rgb(0, 0, 0);
 }
@@ -198,33 +198,33 @@
   color: rgb(0, 0, 0);
 }
 
-[data-entity][data-entity="skill"] {
+[data-entity][data-entity="skills"] {
   background: rgb(187, 47, 117, 0.2);
   border-color: rgb(187, 47, 117);
   color: rgb(255, 255, 255);
 }
 
-[data-entity][data-entity="skill"]::after {
+[data-entity][data-entity="skills"]::after {
   background: rgb(187, 47, 117);
 }
 
-[data-entity][data-entity="freelance"] {
+[data-entity][data-entity="goal"] {
   background: rgb(187, 161, 47, 0.2);
   border-color: rgb(187, 161, 47);
   color: rgb(255, 255, 255);
 }
 
-[data-entity][data-entity="freelance"]::after {
+[data-entity][data-entity="goal"]::after {
   background: rgb(187, 161, 47);
   color: rgb(0, 0, 0);
 }
 
-[data-entity][data-entity="verb"] {
+[data-entity][data-entity="adjective"] {
   background: rgba(47, 187, 171, 0.2);
   border-color: rgb(47, 187, 171);
   color: rgb(255, 255, 255);
 }
 
-[data-entity][data-entity="verb"]::after {
+[data-entity][data-entity="adjective"]::after {
   background: rgb(21, 124, 112);
 }
