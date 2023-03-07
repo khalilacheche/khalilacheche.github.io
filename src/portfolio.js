@@ -18,8 +18,8 @@ const seo = {
 const greeting = {
   title: "Hello!",
   sub: "Khalil Achache",
-  logo_name: "Rohan Kokkula",
-  resumeLink: "",
+  logo_name: "Khalil Achache",
+  resumeLink: "https://drive.google.com/file/d/1HpPFsDKdS_jdAAobtt5QBbGFrhZzZe8k/view?usp=share_link",
 };
 
 // home logos
@@ -185,7 +185,7 @@ const skills = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "Here are some of my own projects/projects I contributed to in a group collaboration. These projects were either done as a part of my college curriculum or as personal projects.",
+    "Here are some of the projects I have worked on. These projects were built either individually or in a team. Some are part of courses, some are personal projects and some are just for fun! They are all open source and available on my Github. I have also included a link to the live demo of the project. Feel free to check them out!",
 };
 
 //project cards
