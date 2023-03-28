@@ -6,7 +6,7 @@ const settings = {
 const seo = {
   title: "Khalil Acheche | Portfolio",
   description:
-    "A Data Science practitioner who thrives to leverage startups with AI based solutions with a blend of UI/UX",
+    "A Data Science practitioner who thrives to leverage startups with AI based solutions ",
   og: {
     title: "Khalil's Portfolio",
     type: "website",
@@ -19,7 +19,7 @@ const greeting = {
   title: "Hello!",
   sub: "Khalil Achache",
   logo_name: "Khalil Achache",
-  resumeLink: "https://drive.google.com/file/d/1HpPFsDKdS_jdAAobtt5QBbGFrhZzZe8k/view?usp=share_link",
+  resumeLink: "https://go.epfl.ch/aarash_cv",
 };
 
 // home logos
@@ -39,7 +39,7 @@ const competitiveSites = {
       style: {
         color: "#0077b5",
       },
-      profileLink: "https://www.linkedin.com/in/khalil-haroun-achache-8a5b42120",
+      profileLink: "https://www.linkedin.com/in/khalil-acheche/",
     },
   ],
 };
@@ -200,18 +200,19 @@ const resumeleft = {
         subtitle: "Poseidon, EPFL, Switzerland",
         date: "April 2022 - Now",
         content: [
-          "Develop features and maintain Poseidon's proprietary software for scheduling employee's time tables",
-          "Work on miscelaneous tasks such as improving the UI/UX of the software, improving the performance of the software, etc.",
-          "Work on various projects within the company such as developing an IoT device to communicate with the employees"
+          "Maintained and imporved a custom software application for scheduling shifts and managing workloads for IT support team members at EPFL.",
+          "Collaborated with other members of the IT support team to identify areas for process improvement and to develop and implement new technologies to improve productivity and efficiency.",
+          "Worked independently and as part of a team, managing multiple projects and priorities simultaneously while ensuring timely delivery of high-quality work products.",
+          "Communicated effectively with team members and stakeholders, providing regular progress updates and soliciting feedback to ensure that software development projects met the requirements and expectations.",
         ],
       },
       {
         title: "VR Research Intern",
-        subtitle: "Immersive Interactive Group, EPFL, Switzerland",
+        subtitle: "Immersive Interaction Group, EPFL, Switzerland",
         date: "July 2022 - September 2022",
         content: [
-          "Worked on a project to develop a VR based experiment to study the effect of VR on embodiment",
-          "Improved in-game pose estimation of the avatar based on the user's body movements",
+          "Worked on a project to develop an experimental study to better understsand the sentiment of embodiment in VR",
+          "Optimized an existing avatar movement module using tracking sensors to improve the feeling of embodiment in VR, resulting in enhanced accuracy and a more immersive experience for users.The improved module was subsequently implemented by colleagues in other VR projects.",
         ],
       },
       {
@@ -219,9 +220,11 @@ const resumeleft = {
         subtitle: "MakerLab, Sousse, Tunisia",
         date: "July 2019 - September 2019",
         content: [
-          "Collaborated with a four-person team to develop and test different embedded systems based solutions for private clients.",
-          "Handled the testing and debugging of the developed systems.",
-          "Wrote the main code for the developed systems using C++ and Arduino.",
+          "Collaborated with a team of 4 to develop and test embedded systems modules for private clients during an internship at an embedded systems company.",
+          "Designed and developed firmware for various embedded systems",
+          "Conducted hardware testing and troubleshooting to ensure that the embedded systems met the clients' requirements and specifications.",
+          "Coordinated with the team to ensure that the project deliverables were completed on time and met the highest standards of quality.",
+          "Gained valuable experience working in a fast-paced and dynamic team environment, while also building technical skills in embedded systems design and testing.",
         ],
       },
       {
@@ -229,9 +232,10 @@ const resumeleft = {
         subtitle: "GoMyCode, Tunis, Tunisia",
         date: "July 2017 - August 2017",
         content: [
-          "Collaborated with a team of 10 instructors to teach a group of 70 students the basics of programming and game development with Unity.",
-          "Taught the students how to use Unity to develop 2D and 3D games.",
-          "Helped the students to develop their own games.",
+          "Taught the basics of programming and game development with Unity to a group of 70 students.",
+          "Facilitated engaging and interactive classes that fostered an inclusive and collaborative learning environment, resulting in high levels of student engagement and participation.",
+          "Provided individualized feedback to help students improve their skills and achieve their learning goals.",
+          "Gained valuable teaching experience and developed strong communication and interpersonal skills through working with students and collaborating with fellow instructors."
         ],
       },
     ],
@@ -244,7 +248,10 @@ const resumeleft = {
         subtitle: "Poseidon, Lausanne, Switzerland",
         date: "September 2021 - Now",
         content: [
-          "Provided IT support to EPFL students via phone, email, and chat",
+          "Providing IT support to students, faculty, and staff at EPFL, diagnosing and resolving a range of technical problems, including hardware and software issues, network connectivity problems in a timely and efficient manner.",
+          "Demonstrating problem-solving and analytical skills, working under pressure to resolve complex technical issues.",
+          "Maintaining accurate documentation of support requests and their resolutions, using tracking systems and other tools to monitor progress and ensure that all issues are resolved to the satisfaction of users.",
+          "Work collaboratively with other members of the IT support team, sharing knowledge and expertise to improve the overall quality of service delivery.",
         ],
       },
     ],
@@ -287,9 +294,11 @@ const resumeright = {
       data: [
         {
           title: "VR Cybersickness suscpetibility study",
-          subtitle: "Immersive Interactive Group, EPFL, Switzerland",
+          subtitle: "Immersive Interaction Group, EPFL, Switzerland",
           content: [
-            "studied the effect of VR on the human body and the brain",
+            "Designed and conducted an experiment to investigate cybersickness, collecting data and utilizing it to train a machine learning model capable of predicting its onset.",
+            "Presented findings from the data analysis at a VR conference workshop, including the use of electroencephalography(EEG) as an objective measure for identifying cybersickness.",
+            "The work contributes to ongoing efforts to improve the design and user experience of VR applications, as well as to the development of objective methods for quantifying cybersickness."
           ],
         },
       ],
