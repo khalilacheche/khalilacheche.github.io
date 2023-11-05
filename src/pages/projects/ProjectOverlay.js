@@ -56,7 +56,7 @@ class ProjectOverlay extends Component {
       }, prevProps.open ? 500 : 50);
     }
     if (prevProps.project !== this.props.project) {
-      fetch("https://raw.githubusercontent.com/khalilacheche/" + this.props.project.repo + "/master/README.md")
+      fetch("https://raw.githubusercontent.com/khalilacheche/" + this.props.project.repo + "/project-metadata/README.md")
         .then(r => r.text())
         .then(text => {
           this.setState({ md: text });

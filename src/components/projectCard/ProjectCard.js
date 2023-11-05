@@ -21,6 +21,18 @@ class ProjectCard extends Component {
                 {proj.title}
               </h2>
             </Card.Title>
+            {proj.date && (<div>
+              <i
+                className={`fa fa-calendar`}
+                style={{
+                  color: proj.linkcolor,
+                  marginLeft: "5px",
+                  marginRight: "5px",
+                }}
+              ></i>
+              {proj.date}
+            </div>)}
+
             <div>
               {proj.tags.map((tag) => {
                 return (
@@ -123,6 +135,7 @@ function parseRepoElements(elem) {
     link: undefined,
     code: "",
     linkcolor: "white",
+    date: "2021-01",
   };
   res.img_path = elem.metadata.img_path === undefined ? res.img_path : elem.metadata.img_path;
   res.code = elem.url;
@@ -133,6 +146,7 @@ function parseRepoElements(elem) {
   res.tags = elem.metadata.tags;
   res.langs = elem.metadata.langs;
   res.frameworks = elem.metadata.frameworks;
+  res.date = elem.metadata.date;
   return res;
 }
 export default ProjectCard;

@@ -123,6 +123,9 @@ So basically I demonstrated 2 types of visual graphics.
 - to save up your time and get you out of confusion, I've created both the versions(animated & static svgs) and commented it out.
 - So if you don't like to use animated svgs, just delete that code and uncomment the function for static svgs
 
+## ICONS:
+https://icon-sets.iconify.design/logos/pytorch/
+
 ### Splash Logo
 
 Note here that if you click [my portfolio](https://rohankokkula.netlify.app), you can see the logo at the beginning. 

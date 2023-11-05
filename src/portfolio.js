@@ -207,6 +207,17 @@ const resumeleft = {
         ],
       },
       {
+        title: "Junior Data Scientist",
+        subtitle: "DNext, Nyon, Switzerland",
+        date: "July 2023 - September 2023",
+        content: [
+          "Conducted global data collection through web scraping techniques to gather livestock market information in multiple countries.",
+          "Collaborated with a cross- functional team to develop an automated report system for monitoring the current and future states of the feed/ livestock market.",
+          "Coordinated with international teams to design a client- focused dashboard for real - time market insights.",
+          "Delivered impactful presentations to the team, sharing comprehensive market analysis and valuable insights."
+        ],
+      },
+      {
         title: "VR Research Intern",
         subtitle: "Immersive Interaction Group, EPFL, Switzerland",
         date: "July 2022 - September 2022",
@@ -241,21 +252,21 @@ const resumeleft = {
     ],
   },
   {
-    title: ["Job Experience"],
+    title: ["Extracurricular Activities"],
     data: [
       {
-        title: "Level 1 Technical Support",
-        subtitle: "Poseidon, Lausanne, Switzerland",
-        date: "September 2021 - Now",
+        title: "Logistics Manager",
+        subtitle: "AMLD Africa, EPFL, Switzerland",
+        date: "March 2023 - Now",
         content: [
-          "Providing IT support to students, faculty, and staff at EPFL, diagnosing and resolving a range of technical problems, including hardware and software issues, network connectivity problems in a timely and efficient manner.",
-          "Demonstrating problem-solving and analytical skills, working under pressure to resolve complex technical issues.",
-          "Maintaining accurate documentation of support requests and their resolutions, using tracking systems and other tools to monitor progress and ensure that all issues are resolved to the satisfaction of users.",
-          "Work collaboratively with other members of the IT support team, sharing knowledge and expertise to improve the overall quality of service delivery.",
+          "Organizing the logistics for the AMLD Africa 2024 conference, including the live streaming of the event, the catering, the accommodation for the speakers, and the transportation of the participants.",
+          "Designed and implemented a system for automating the reviewing process of the submitted papers, resulting in a more efficient and streamlined process.",
+          "Designed and implemented a monitoring system for the conference organizers to track the progress of the conference preparations.",
         ],
       },
     ],
-  },]
+  }
+  ]
 };
 
 const resumeright = {
@@ -293,12 +304,50 @@ const resumeright = {
       title: ["Research Experience"],
       data: [
         {
-          title: "VR Cybersickness suscpetibility study",
+          title: "VR Cybersickness susceptibility study",
+          published_in: {
+            title: "DOI: 10.1109/VRW58643.2023.00068",
+            link: "https://ieeexplore.ieee.org/document/10108555",
+          },
           subtitle: "Immersive Interaction Group, EPFL, Switzerland",
           content: [
             "Designed and conducted an experiment to investigate cybersickness, collecting data and utilizing it to train a machine learning model capable of predicting its onset.",
             "Presented findings from the data analysis at a VR conference workshop, including the use of electroencephalography(EEG) as an objective measure for identifying cybersickness.",
-            "The work contributes to ongoing efforts to improve the design and user experience of VR applications, as well as to the development of objective methods for quantifying cybersickness."
+            "The work contributes to ongoing efforts to improve the design and user experience of VR applications, as well as to the development of objective methods for quantifying cybersickness.",
+            "Published in: 2023 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)"
+
+          ],
+        },
+      ],
+    },
+    {
+      title: ["Job Experience"],
+      data: [
+        {
+          title: "Level 1 Technical Support",
+          subtitle: "Poseidon, Lausanne, Switzerland",
+          date: "September 2021 - Now",
+          content: [
+            "Providing IT support to students, faculty, and staff at EPFL, diagnosing and resolving a range of technical problems, including hardware and software issues, network connectivity problems in a timely and efficient manner.",
+            "Demonstrating problem-solving and analytical skills, working under pressure to resolve complex technical issues.",
+            "Maintaining accurate documentation of support requests and their resolutions, using tracking systems and other tools to monitor progress and ensure that all issues are resolved to the satisfaction of users.",
+            "Work collaboratively with other members of the IT support team, sharing knowledge and expertise to improve the overall quality of service delivery.",
+          ],
+        },
+        {
+          title: "Teaching Assistant (TA)",
+          subtitle: "EPFL, Lausanne, Switzerland",
+          date: "September 2023 - Now",
+          content: [
+            "MICRO-452 : Basics of Mobile Robotics"
+          ],
+        },
+        {
+          title: "Teaching Assistant (TA)",
+          subtitle: "EPFL, Lausanne, Switzerland",
+          date: "September 2021 - January 2022",
+          content: [
+            "CS-107: Introduction to Programming"
           ],
         },
       ],

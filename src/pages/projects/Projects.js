@@ -125,6 +125,13 @@ class Projects extends Component {
       res = res && (selectedLangs.length === 0 || selectedLangs.some((lang) => langs.includes(lang.value)));
       return res;
     });
+    console.log(repos);
+    repos.sort((a, b) => {
+      return b.metadata.date.localeCompare(a.metadata.date);
+    }
+    );
+    console.log(repos);
+
 
     return repos;
   }
@@ -150,28 +157,49 @@ class Projects extends Component {
     return filteredOptions;
   }
 
-  componentDidMount() {
-    octokit.repos.listForUser({
-      username: 'khalilacheche',
-      type: 'all',
-      sort: 'created'
-    }).then(res => {
-      var repos = res.data;
-      return Promise.all(
-        repos.map(repo => retrieveRepoMetadata(repo)));
-    }).then(lRepoMetadata => {
-      lRepoMetadata = lRepoMetadata.filter((el) => el.metadata !== undefined);
-      var tags = getValuesSet(lRepoMetadata, "tags");
-      var languages = getValuesSet(lRepoMetadata, "langs");
-      var frameworks = getValuesSet(lRepoMetadata, "frameworks");
-      this.setState({
-        "allRepos": lRepoMetadata,
-        "tags": tags,
-        "langs": languages,
-        "frameworks": frameworks
-      });
+  async fetchAllRepos(username) {
+    let allRepos = [];
+    let page = 1;
+    const perPage = 30; // Number of repositories per page
 
-    }).catch(err => console.log(err));
+    while (true) {
+      try {
+        const response = await octokit.request('GET /users/{username}/repos', {
+          username: username,
+          type: 'all',
+          sort: 'created',
+          page: page,
+          per_page: perPage,
+        });
+
+        if (response.data.length === 0) {
+          break; // No more pages to fetch
+        }
+
+        allRepos = allRepos.concat(response.data);
+        page++;
+      } catch (error) {
+        //console.error(error);
+        break;
+      }
+    }
+    var lRepoMetadata = await Promise.all(allRepos.map((repo) => retrieveRepoMetadata(repo)));
+    lRepoMetadata = lRepoMetadata.filter((el) => el.metadata !== undefined);
+    const tags = getValuesSet(lRepoMetadata, "tags");
+    const languages = getValuesSet(lRepoMetadata, "langs");
+    const frameworks = getValuesSet(lRepoMetadata, "frameworks");
+
+    this.setState({
+      allRepos: lRepoMetadata,
+      tags: tags,
+      langs: languages,
+      frameworks: frameworks,
+    });
+  }
+
+  componentDidMount() {
+
+    this.fetchAllRepos("khalilacheche");
   }
   render() {
     const filteredProjects = this.filterProjects();

@@ -45,6 +45,7 @@ export default function Resume() {
                             subtitle={info.subtitle}
                             date={info.date}
                             content={info.content}
+                            published_in={info.published_in}
                           ></Resumecontent>
                         );
                       })}
