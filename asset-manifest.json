@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6b4a633b.css",
-    "main.js": "/static/js/main.c12ce3e5.js",
+    "main.js": "/static/js/main.c62ac225.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.33f11e8e33e406b0dc21.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.5f2a2f236048660df440.svg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -30,10 +30,10 @@
     "static/media/example.md": "/static/media/example.5e05adac692a36140c6d.md",
     "index.html": "/index.html",
     "main.6b4a633b.css.map": "/static/css/main.6b4a633b.css.map",
-    "main.c12ce3e5.js.map": "/static/js/main.c12ce3e5.js.map"
+    "main.c62ac225.js.map": "/static/js/main.c62ac225.js.map"
   },
   "entrypoints": [
     "static/css/main.6b4a633b.css",
-    "static/js/main.c12ce3e5.js"
+    "static/js/main.c62ac225.js"
   ]
 }
