@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://khalilacheche.github.io/PortfolioWebsite",
+  "homepage": "https://khalilacheche.github.io",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@emotion/react": "^11.10.5",

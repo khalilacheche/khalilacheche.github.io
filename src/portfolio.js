@@ -197,8 +197,8 @@ const resumeleft = {
     data: [
       {
         title: "Freelance Developer",
-        subtitle: "Poseidon, EPFL, Switzerland",
-        date: "April 2022 - Now",
+        subtitle: "Poseidon, Lausanne, Switzerland",
+        date: "April 2022 - December 2024",
         content: [
           "Maintained and imporved a custom software application for scheduling shifts and managing workloads for IT support team members at EPFL.",
           "Collaborated with other members of the IT support team to identify areas for process improvement and to develop and implement new technologies to improve productivity and efficiency.",
@@ -211,10 +211,9 @@ const resumeleft = {
         subtitle: "DNext, Nyon, Switzerland",
         date: "July 2023 - September 2023",
         content: [
-          "Conducted global data collection through web scraping techniques to gather livestock market information in multiple countries.",
-          "Collaborated with a cross- functional team to develop an automated report system for monitoring the current and future states of the feed/ livestock market.",
-          "Coordinated with international teams to design a client- focused dashboard for real - time market insights.",
-          "Delivered impactful presentations to the team, sharing comprehensive market analysis and valuable insights."
+          "Conducted comprehensive data collection on a global scale using web scraping techniques to compile information on livestock markets across various countries, enhancing the company's database for in-depth analysis.",
+          "Played an integral role in a cross - functional team to design and implement an automated reporting system, aimed at efficiently tracking the dynamics of the feed and livestock market, contributing to more informed decision - making processes.",
+          "Presented detailed market analyses and insights to the Data Science team, facilitating a better understanding of market trends and supporting strategic planning."
         ],
       },
       {
@@ -259,7 +258,7 @@ const resumeleft = {
         subtitle: "AMLD Africa, EPFL, Switzerland",
         date: "March 2023 - Now",
         content: [
-          "Organizing the logistics for the AMLD Africa 2024 conference, including the live streaming of the event, the catering, the accommodation for the speakers, and the transportation of the participants.",
+          "Successfully organized the logistics for the AMLD Africa 2024 conference, including the live streaming of the event, the ticketing system and the registration of the participants and the accommodation for the speakers",
           "Designed and implemented a system for automating the reviewing process of the submitted papers, resulting in a more efficient and streamlined process.",
           "Designed and implemented a monitoring system for the conference organizers to track the progress of the conference preparations.",
         ],
@@ -277,7 +276,7 @@ const resumeright = {
         {
           title: "MSc in Data Science",
           subtitle: "EPFL, Lausanne, Switzerland",
-          date: "2022 - current",
+          date: "2022 - Present",
           content: [],
         },
         {
@@ -301,7 +300,7 @@ const resumeright = {
       ],
     },
     {
-      title: ["Research Experience"],
+      title: ["Published Research"],
       data: [
         {
           title: "VR Cybersickness susceptibility study",
@@ -312,9 +311,7 @@ const resumeright = {
           subtitle: "Immersive Interaction Group, EPFL, Switzerland",
           content: [
             "Designed and conducted an experiment to investigate cybersickness, collecting data and utilizing it to train a machine learning model capable of predicting its onset.",
-            "Presented findings from the data analysis at a VR conference workshop, including the use of electroencephalography(EEG) as an objective measure for identifying cybersickness.",
-            "The work contributes to ongoing efforts to improve the design and user experience of VR applications, as well as to the development of objective methods for quantifying cybersickness.",
-            "Published in: 2023 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)"
+            "Presented findings from the data analysis,including the use of electroencephalography (EEG) as an objective measure for identifying cybersickness, at the 2023 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW), ",
 
           ],
         },
@@ -324,7 +321,7 @@ const resumeright = {
       title: ["Job Experience"],
       data: [
         {
-          title: "Level 1 Technical Support",
+          title: "Level 2 Technical Support",
           subtitle: "Poseidon, Lausanne, Switzerland",
           date: "September 2021 - Now",
           content: [
@@ -337,9 +334,10 @@ const resumeright = {
         {
           title: "Teaching Assistant (TA)",
           subtitle: "EPFL, Lausanne, Switzerland",
-          date: "September 2023 - Now",
+          date: "September 2023 - December 2024",
           content: [
-            "MICRO-452 : Basics of Mobile Robotics"
+            "MICRO-452 : Basics of Mobile Robotics",
+            "Under the supervision of Prof. Francesco Mondada, I was responsible for grading assignments, providing feedback, and assisting students with their questions and concerns.",
           ],
         },
         {
@@ -347,7 +345,8 @@ const resumeright = {
           subtitle: "EPFL, Lausanne, Switzerland",
           date: "September 2021 - January 2022",
           content: [
-            "CS-107: Introduction to Programming"
+            "CS-107: Introduction to Programming",
+            "Under the supervision of Prof. Jamila Sam, I was responsible for grading assignments, providing feedback, and assisting students with their questions and concerns.",
           ],
         },
       ],

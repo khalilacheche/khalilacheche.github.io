@@ -27,8 +27,8 @@ export default function Greeting(props) {
               <h1 className="greeting-typewriter" style={{ color: theme.blue }}>
                 <Typewriter
                   onInit={(typewriter) => {
-                    typewriter
-                      .typeString("Data Scientist").pauseFor(200).deleteAll()
+                    typewriter.typeString("ML Engineer")
+                      .pauseFor(200).deleteAll().typeString("Data Scientist").pauseFor(200).deleteAll().typeString("Software Developer").pauseFor(200).deleteAll().typeString("Robotics Enthusiast").pauseFor(200).deleteAll().typeString("Problem Solver").pauseFor(200).deleteAll().typeString("AI Enthusiast").pauseFor(200).deleteAll().typeString("Lifelong Learner").pauseFor(200).deleteAll().typeString("Technology Enthusiast").pauseFor(200).deleteAll().typeString("Passionate Developer").pauseFor(200).deleteAll()
                       .start();
                   }}
                   options={{
@@ -41,14 +41,14 @@ export default function Greeting(props) {
                 className="greeting-text-span subTitle"
                 style={{ color: theme.text }}>
                 <div className="entities">
-                  I am currently pursuing a Masters degree in Data Science and am passionate about using <mark data-entity="passion">Artificial Intelligence</mark> to solve real-world problems.
-                  I am particularly interested in Computer Vision applications and using state-of-the-art machine learning models to improve them. <br></br>
-                  Apart from my academic pursuits, I am also an <mark data-entity="qualifier">avid maker</mark> and enjoy experimenting with various technologies in my free time.
-                  My personal projects range from  {" "}<mark data-entity="skills"> Software Engineering, Robotics, and Machine Learning</mark>. <br></br>
-                  I believe that hands-on experience in different areas of technology is essential to being a well-rounded data scientist. <br></br>
-                  I want to use my skills and knowledge to make a <mark data-entity="goal">positive impact</mark> on people's life using technology, while enjoying the ride doing it.
-                  <br></br>I am excited to share my portfolio with you and I hope you find it informative and interesting.
-                  <br></br>Thank you for visiting!
+                  I'm currently pursuing a Master's in Data Science, passionate about leveraging AI, especially in <mark data-entity="passion">Computer Vision</mark>, to address real-world challenges.
+                  <br />
+                  Beyond academics, I'm an enthusiastic maker, dabbling in {" "}<mark data-entity="skills"> Software Engineering, Robotics, and Machine Learning</mark>in my spare time.
+                  <br /> I'm committed to using my diverse technological expertise to make a <mark data-entity="goal">positive impact</mark> through technology, enjoying the journey along the way.
+                  <br />
+                  Excited to present my portfolio, I hope you find it both informative and engaging.
+                  Thanks for stopping by!
+
                 </div>
               </span>
               <CompetitiveSites logos={competitiveSites.competitiveSites} />
